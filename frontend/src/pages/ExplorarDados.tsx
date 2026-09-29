@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { getDadosTabulares } from '../services/api';
 import type { Empreendimento } from '../types';
 import { fmtInt, normalizarEstagio } from '../utils';
-import { Search, ArrowUpDown, Building2, Home, CheckCircle2, Download, AlertTriangle } from 'lucide-react';
+import { Search, ArrowUpDown, Building2, Home, CheckCircle2, AlertTriangle } from 'lucide-react';
 
 export const ExplorarDados: React.FC = () => {
   const [distritos, setDistritos] = useState<string[]>([]);
@@ -88,35 +88,6 @@ export const ExplorarDados: React.FC = () => {
     }
   };
 
-  // Exporta a visão atual (filtros + ordenação) em CSV compatível com Excel pt-BR (separador ;, UTF-8 com BOM)
-  const exportarCSV = () => {
-    const colunas: [string, string][] = [
-      ['Nome', 'Nome'],
-      ['Endereço', 'Endereco'],
-      ['Subprefeitura', 'Subprefeitura'],
-      ['Distrito', 'Distrito'],
-      ['Total UHs', 'Total_UHs'],
-      ['UHs entregues', 'UHs_entregues'],
-      ['Estágio', 'Estagio'],
-    ];
-    const esc = (v: unknown) => {
-      const t = v === null || v === undefined ? '' : String(v);
-      return /[";\r\n]/.test(t) ? `"${t.replace(/"/g, '""')}"` : t;
-    };
-    const linhas = [
-      colunas.map(([rotulo]) => rotulo).join(';'),
-      ...dadosOrdenados.map((r) =>
-        colunas.map(([, campo]) => esc(campo === 'Estagio' ? normalizarEstagio(r) : r[campo])).join(';')
-      ),
-    ];
-    const blob = new Blob(['\uFEFF' + linhas.join('\r\n')], { type: 'text/csv;charset=utf-8;' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = 'habitasp_empreendimentos.csv';
-    a.click();
-    URL.revokeObjectURL(url);
-  };
 
   // Summary metrics for filtered data
   const totalUHsFiltradas = dadosFiltrados.reduce((acc, curr) => acc + (Number(curr.Total_UHs) || 0), 0);
@@ -228,14 +199,6 @@ export const ExplorarDados: React.FC = () => {
             <span className="text-xs bg-blue-50 text-blue-800 px-3 py-1 rounded-full font-medium border border-blue-200">
               Ordenado por: <b>{sortField}</b> ({sortDirection.toUpperCase()})
             </span>
-            <button
-              onClick={exportarCSV}
-              disabled={dadosOrdenados.length === 0}
-              className="flex items-center gap-1.5 text-xs font-semibold bg-blue-600 hover:bg-blue-700 disabled:opacity-40 text-white px-3 py-1.5 rounded-full transition"
-            >
-              <Download size={14} />
-              Exportar CSV
-            </button>
           </div>
         </div>
 
