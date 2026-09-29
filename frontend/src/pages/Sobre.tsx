@@ -39,7 +39,7 @@ export const Sobre: React.FC = () => {
 
         <Card icon={<Database className="text-blue-600" size={24} />} title="3. Dados e Fontes">
           <ul className="list-disc pl-5 space-y-2">
-            <li><b>Dados reais, sem dados sintéticos ou simulados.</b> Data de referência: agosto de 2026.</li>
+            <li><b>Dados reais, sem dados sintéticos ou simulados.</b> Data de referência: setembro de 2026.</li>
             <li><b>Metas:</b> Programa de Metas 2025–2028 da Prefeitura de São Paulo (Metas 8 a 11 — SEHAB). Execução das metas: HabitaSampa.</li>
             <li><b>Empreendimentos, obras de urbanização e favelas:</b> camadas oficiais da SEHAB no GeoSampa. As contagens e somas exibidas (empreendimentos, UHs, áreas, comparativos por subprefeitura) são resultado de processamento próprio sobre essa base vetorial.</li>
             <li>Termos como “Favela”, “Núcleo” e “Cortiço” seguem a nomenclatura oficial das camadas do GeoSampa/SEHAB.</li>

@@ -73,7 +73,7 @@ def get_api_metas():
 def get_api_meta_info():
     data = get_metas()
     return {
-        "data_referencia": data.get("data_referencia", "Agosto de 2026"),
+        "data_referencia": data.get("data_referencia", "Setembro de 2026"),
         "fonte_primaria": data.get("fonte_primaria", "HabitaSampa"),
         "indicadores_complementares": data.get("indicadores_complementares", {}),
     }

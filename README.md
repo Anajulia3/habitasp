@@ -52,14 +52,14 @@ A separação entre backend e frontend foi uma escolha deliberada (ver seção 1
 
 ## 9. Dados Utilizados
 
-Todos os dados são **reais**, extraídos das fontes acima e salvos como snapshot local (data de referência: **agosto de 2026**), para garantir que a aplicação funcione de forma estável e independente durante a avaliação (ver justificativa na seção 11).
+Todos os dados são **reais**, extraídos das fontes acima e salvos como snapshot local (data de referência: **setembro de 2026**), para garantir que a aplicação funcione de forma estável e independente durante a avaliação (ver justificativa na seção 11).
 
 Camadas geoespaciais utilizadas (GeoSampa/WFS, reprojetadas para EPSG:4326):
 - Empreendimento Habitacional (`habita2geosampa_habi_conjhabitacional2geosampa_ext`) — 1.604 feições.
 - Obra de Urbanização em Assentamento Precário (`habita2geosampa_habi_obraurbanizacao2geosampa_ext`).
 - Favela (`habita2geosampa_habi_favela2geosampa`) — camada de contexto territorial.
 
-Indicadores de execução (HabitaSampa, snapshot de agosto/2026): UH de interesse social entregues, cartas de crédito emitidas, UH em obras, área de urbanização finalizada, títulos de posse/propriedade emitidos, conjuntos revitalizados, famílias com auxílio-aluguel e famílias com cartão emergencial.
+Indicadores de execução (HabitaSampa, snapshot de setembro/2026): UH de interesse social entregues, cartas de crédito emitidas, UH em obras, área de urbanização finalizada, títulos de posse/propriedade emitidos, conjuntos revitalizados, famílias com auxílio-aluguel e famílias com cartão emergencial.
 
 ## 10. Indicação de Dados Sintéticos ou Simulados
 
@@ -76,7 +76,7 @@ Indicadores de execução (HabitaSampa, snapshot de agosto/2026): UH de interess
 
 1. Coleta dos dados geoespaciais via serviço WFS do GeoSampa (formato GeoJSON).
 2. Tratamento e reprojeção das camadas de SIRGAS2000 (EPSG:31983) para WGS84 (EPSG:4326) com GeoPandas.
-3. Coleta dos indicadores de execução das metas a partir do HabitaSampa, com data de referência fixada (agosto/2026).
+3. Coleta dos indicadores de execução das metas a partir do HabitaSampa, com data de referência fixada (setembro/2026).
 4. Disponibilização dos dados processados via API REST (FastAPI).
 5. Consumo da API e renderização das visualizações no frontend (React + Leaflet).
 

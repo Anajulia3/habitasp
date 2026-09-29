@@ -26,7 +26,7 @@ const NavItem: React.FC<{ to: string; icon: React.ReactNode; children: React.Rea
 };
 
 function App() {
-  const [dataReferencia, setDataReferencia] = useState('Agosto de 2026');
+  const [dataReferencia, setDataReferencia] = useState('Setembro de 2026');
 
   useEffect(() => {
     getMetaInfo()
