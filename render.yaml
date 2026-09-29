@@ -1,0 +1,13 @@
+# Blueprint do Render (opcional): New + > Blueprint, apontando para este repositório.
+services:
+  - type: web
+    name: habitasp-api
+    runtime: python
+    rootDir: backend
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: ALLOWED_ORIGINS
+        value: "*"

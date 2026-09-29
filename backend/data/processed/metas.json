@@ -1,0 +1,49 @@
+{
+    "data_referencia": "Agosto de 2026",
+    "fonte_primaria": "Programa de Metas 2025-2028 (versão final vigente), conforme página 'Ações e Programas' da SEHAB (prefeitura.sp.gov.br/web/habitacao/w/acesso_a_informacao/178759); execução: HabitaSampa (snapshot de agosto/2026)",
+    "metas": {
+        "meta_8": {
+            "titulo": "Meta 8: Entregar 40 mil moradias a famílias de baixa renda",
+            "descricao": "Unidades habitacionais entregues em locais com infraestrutura urbana e acesso à rede de transporte (entregas desde jan/2025)",
+            "meta_valor": 40000,
+            "atual_valor": 7439,
+            "unidade": "UH entregues",
+            "percentual": 18.6,
+            "fonte": "HabitaSampa (snapshot agosto/2026); meta oficial: Programa de Metas 2025-2028, SEHAB"
+        },
+        "meta_9": {
+            "titulo": "Meta 9: Entregar 100 mil títulos de posse ou propriedade",
+            "descricao": "Por meio do Pode Entrar - Regularização Fundiária, garantindo a famílias de baixa renda moradia estável, com segurança jurídica",
+            "meta_valor": 100000,
+            "atual_valor": 41882,
+            "unidade": "Títulos emitidos",
+            "percentual": 41.88,
+            "fonte": "HabitaSampa (snapshot agosto/2026); meta oficial: Programa de Metas 2025-2028, SEHAB"
+        },
+        "meta_10": {
+            "titulo": "Meta 10: Beneficiar 50 mil famílias com urbanização de áreas de favela",
+            "descricao": "Indicador oficial (nº de famílias) sem dado no snapshot do HabitaSampa. Exibido: m² urbanizados frente à meta de 4 milhões de m² das ações estratégicas.",
+            "meta_valor": 4000000,
+            "atual_valor": 728531.84,
+            "unidade": "m² urbanizados (proxy)",
+            "percentual": 18.21,
+            "fonte": "HabitaSampa (snapshot agosto/2026), m² de urbanização finalizada; ações estratégicas: Programa de Metas 2025-2028, SEHAB"
+        },
+        "meta_11": {
+            "titulo": "Meta 11: Revitalizar 20 empreendimentos habitacionais",
+            "descricao": "Sob responsabilidade da SEHAB/COHAB, gerando benefícios para 4 mil famílias e favorecendo o convívio e a integração comunitária",
+            "meta_valor": 20,
+            "atual_valor": 12,
+            "unidade": "Conjuntos revitalizados",
+            "percentual": 60.0,
+            "fonte": "HabitaSampa (snapshot agosto/2026); meta oficial: Programa de Metas 2025-2028, SEHAB"
+        }
+    },
+    "indicadores_complementares": {
+        "uh_em_obras": 38827,
+        "area_urbanizacao_m2": 728531.84,
+        "cartas_credito": 6319,
+        "auxilio_aluguel": 28960,
+        "cartao_emergencial": 12897
+    }
+}

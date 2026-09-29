@@ -1,0 +1,5 @@
+# Dependências para PREPARAR/ATUALIZAR os dados (scripts/atualizar_dados.py). Não são usadas em runtime.
+-r requirements.txt
+geopandas>=0.13.0
+pyogrio>=0.6.0
+pandas>=2.0.0
