@@ -181,14 +181,8 @@ O script baixa as camadas do WFS do GeoSampa, reprojeta para WGS84, corrige graf
 
 ## 18. Repositório e Aplicação Publicada
 
-- **Repositório GitHub**: _a preencher após a criação/push do repositório._
-- **Aplicação publicada (frontend — Vercel)**: _pendente de publicação._
-- **API publicada (backend — Render)**: _pendente de publicação._
+- **Repositório GitHub**: https://github.com/Anajulia3/habitasp
+- **Aplicação publicada (frontend — Vercel)**: https://habitasp.vercel.app
+- **API publicada (backend — Render)**: https://habitasp-api.onrender.com
 
-> Enquanto a publicação não é feita, a aplicação pode ser executada e avaliada localmente seguindo integralmente as instruções da seção 17, que não dependem de nenhum serviço externo.
-
-### Como publicar
-1. **API no Render**: _New +_ → _Web Service_ (ou _Blueprint_, usando o `render.yaml` da raiz) apontando para este repositório. Se configurar manualmente: *Root Directory* `backend`, *Build Command* `pip install -r requirements.txt`, *Start Command* `uvicorn app.main:app --host 0.0.0.0 --port $PORT`, *Health Check Path* `/health`.
-2. **Frontend na Vercel**: _Add New Project_ → importar o repositório → *Root Directory* `frontend` (preset Vite detectado automaticamente). Em *Environment Variables*, definir `VITE_API_URL` com a URL pública da API no Render (sem barra final). O `frontend/vercel.json` já configura o redirecionamento das rotas (`/mapa`, `/dados`, `/sobre`) para a aplicação.
-3. Opcional: no Render, definir `ALLOWED_ORIGINS` com a URL do frontend para restringir o CORS.
-4. Preencher os links acima neste README.
+> O plano gratuito do Render coloca a API em repouso após um período de inatividade. A primeira requisição após esse período pode levar de 30 a 60 segundos para responder.
