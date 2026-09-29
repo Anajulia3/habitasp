@@ -96,7 +96,7 @@ Foi utilizado o Claude (Anthropic) como copiloto de desenvolvimento nas seguinte
 - **Geração e revisão de código**: geração inicial dos componentes React, das rotas FastAPI e das funções de tratamento geoespacial.
 - **Depuração e revisão crítica**: o código gerado foi revisado e testado manualmente de ponta a ponta (backend + frontend rodando juntos). Nesse processo foram identificados e corrigidos: uma configuração incorreta do Tailwind CSS (v4) que deixava a interface sem estilo, um bug no filtro de distrito da tela de exploração de dados que travava as opções do seletor, uma inconsistência na numeração oficial das metas do Programa de Metas, corrigida após conferência com a página oficial da SEHAB, e ajustes de organização do repositório (remoção de arquivos de template não utilizados e configuração do `.gitignore`).
 
-Não foi necessário apresentar o histórico completo de interações, conforme facultado pelo edital.
+
 
 ## 15. Limitações Identificadas
 
